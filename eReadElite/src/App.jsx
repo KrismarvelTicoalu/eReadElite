@@ -5,9 +5,9 @@ import './css/responsive.css'
 import './css/jquery.mCustomScrollbar.min.css'
 import './css/owl.carousel.min.css'
 import HomePage from './pages/Homepage'
-import Celebs from './pages/Celebs';
-import Movies from './pages/Movies';
-import Tv from './pages/Tv';
+import Catalog from './pages/Catalog';
+import Discussion from './pages/Discussion';
+import Publish from './pages/Publish';
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
       <Router>
           <Routes>
             <Route exact path="/" element={<HomePage />} />
-            <Route exact path="/celebs" element={<Celebs />} />
-            <Route exact path="/movies" element={<Movies />} />
-            <Route exact path="/tv" element={<Tv />} />
+            <Route exact path="/publish" element={<Publish />} />
+            <Route exact path="/catalog" element={<Catalog />} />
+            <Route exact path="/discussion" element={<Discussion />} />
           </Routes>
       </Router>
     </>
