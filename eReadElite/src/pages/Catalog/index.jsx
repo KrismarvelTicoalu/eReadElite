@@ -13,7 +13,7 @@ const Catalog = () => {
       <div className="movies_menu">
         <ul>
           <li className="active"><a href="#">Overview</a></li>
-          <li><a href="#">Mystery</a></li>
+          <li><a href="/catalog/mystery">Mystery</a></li>
           <li><a href="#">Sci-fi</a></li>
           <li><a href="#">Romance</a></li>
           <li><a href="celebs.html">Educational</a></li>
