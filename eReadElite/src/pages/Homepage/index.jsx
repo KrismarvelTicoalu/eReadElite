@@ -65,18 +65,6 @@ const HomePage = () => {
   {/* movies section start */}
   <div className="movies_section layout_padding">
     <div className="container">
-      <div className="movies_menu">
-        <ul>
-          <li className="active"><a href="#">Overview</a></li>
-          <li><a href="/tv">TV</a></li>
-          <li><a href="/movies">Movies</a></li>
-          <li><a href="#">Show</a></li>
-          <li><a href="/celebs">Celeb</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Cartoon</a></li>
-        </ul>
-      </div>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Letest Movies</h2>
         <div className="seemore_bt"><a href="#">See More</a></div>
