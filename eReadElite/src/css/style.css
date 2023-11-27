@@ -516,11 +516,11 @@ button {
     content: '';
     border: 1px solid #ffffff;
     position: relative;
-    width: 890px;
+    width: 800px;
     text-align: center;
     right: 0;
     top: -2px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     justify-content: center;
     left: -20px;
@@ -863,4 +863,10 @@ input.email_text::placeholder {
 
 .copyright_text a:hover {
     color: #d89616;
+}
+
+.subtitle {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: -25px;
 }
