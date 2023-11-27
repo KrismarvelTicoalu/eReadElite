@@ -864,3 +864,67 @@ input.email_text::placeholder {
 .copyright_text a:hover {
     color: #d89616;
 }
+
+.tfak {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.rating-section {
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+.rating-section h2{
+    text-align: center;
+}
+
+.rate_bt {
+    width: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.rate_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #df9911;
+    text-align: center;
+    padding: 7px 0px;
+    border-radius: 40px;
+}
+
+.rate_bt a:hover {
+    color: #ffffff;
+    background-color: #141414;
+}
+
+.stars {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: -30px;
+}
+
+.fa-star {
+    color: gray;
+    font-size: 2rem;
+}
+
+.fa-star:hover {
+    color: orange;
+}
+
+.review-section h2 {
+    text-align: center;
+}
+
+.profileBody {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
