@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
         <div>
-  <Header />
+  <Header home="active"/>
   {/* header section end */}
   {/* banner section end */}
   <div className="banner_section layout_padding">

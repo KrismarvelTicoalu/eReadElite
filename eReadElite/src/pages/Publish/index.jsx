@@ -5,7 +5,7 @@ const Publish = () => {
     <div>
        <div>
   {/* header section start */}
-  <Header />
+  <Header publish="active"/>
   {/* header section end */}
   {/* cooming  section start */}
   <div className="cooming_section layout_padding">
