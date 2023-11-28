@@ -1,4 +1,5 @@
-const Header = () => {
+/* eslint-disable react/prop-types */
+const Header = (props) => {
   return (
     <div>
         <div className="header_section">
@@ -9,21 +10,21 @@ const Header = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
+          <li className={`nav-item ${props.home}`}>
             <a className="nav-link" href="/">Home</a>
           </li>
-          <li className="nav-item">
+          <li className={`nav-item ${props.catalog}`}>
             <a className="nav-link" href="/catalog">Catalog</a>
           </li>
-          <li className="nav-item">
+          <li className={`nav-item ${props.discussion}`}>
             <a className="nav-link" href="/discussion">Discussion</a>
           </li>
-          <li className="nav-item">
+          <li className={`nav-item ${props.publish}`}>
             <a className="nav-link" href="/publish">Publish</a>
           </li>
         </ul>
-        <div className="search_icon"><a href="#"><img src="../images/notification-icon.png" /><span className="padding_left_15">Notificastion</span></a></div>
-        <div className="search_icon"><a href="#"><img src="../images/eye-icon.png" /><span className="padding_left_15">Viwe</span></a></div>
+        <div className="search_icon"><a href="#"><img src="../images/notification-icon.png" /><span className="padding_left_15">Notification</span></a></div>
+        <div className="search_icon"><a href="#"><img src="../images/eye-icon.png" /><span className="padding_left_15">View</span></a></div>
         <div className="search_icon"><a href="#"><img src="../images/user-icon.png" /><span className="padding_left_15">login</span></a></div>
         <div className="search_icon"><a href="#"><img src="../images/search-icon.png" /><span className="padding_left_15">Search...</span></a></div>
       </div>

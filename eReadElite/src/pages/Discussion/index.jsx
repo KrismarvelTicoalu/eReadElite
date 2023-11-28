@@ -5,7 +5,7 @@ const Discussion = () => {
     <div>
         <div>
   {/* header section start */}
-  <Header />
+  <Header discussion="active"/>
   {/* header section end */}
   {/* arrival section start */}
   <div className="arrival_section layout_padding">

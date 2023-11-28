@@ -5,7 +5,7 @@ const Catalog = () => {
     <div>
        <div>
   {/* header section start */}
-  <Header />
+  <Header catalog="active"/>
   {/* header section end */}
   {/* movies section start */}
   <div className="movies_section layout_padding">
