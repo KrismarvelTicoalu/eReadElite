@@ -1,7 +1,21 @@
+import { useEffect, useState } from "react";
 import Header from "../../components/Header"
 import Movie from "../../components/Movie"
+import { getDatabase, ref, onValue} from "firebase/database";
 
 const Catalog = () => {
+  const [movie, setMovie] = useState([]);
+
+  useEffect(() => {
+    const db = getDatabase();
+    const movieRef = ref(db, "movies/");
+    onValue(movieRef, (snapshot) => {
+      const data = snapshot.val();
+      console.log(data);
+      setMovie(data);
+    });
+  }, [])
+
   return (
     <div>
        <div>

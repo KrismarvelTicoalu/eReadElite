@@ -5,7 +5,7 @@ const Movie = (props) => {
           <div className="image_3">
             <img src={`images/${props.thumbnail}`} className="image" style={{width: '100%'}} />
             <div className="middle">
-              <div className="playnow_bt">Play Now</div>
+              <div className="playnow_bt"><a href="/bookProfile">Play Now</a></div>
             </div>
           </div>
           <h1 className="code_text">{props.title}</h1>
