@@ -1,9 +1,11 @@
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './css/style.css'
 import './css/bootstrap.min.css'
 import './css/responsive.css'
 import './css/jquery.mCustomScrollbar.min.css'
 import './css/owl.carousel.min.css'
+
 import HomePage from './pages/Homepage'
 import Catalog from './pages/Catalog';
 import Discussion from './pages/Discussion';
@@ -13,6 +15,9 @@ import SciFi from './pages/Sci-fi';
 import Romance from './pages/Romance';
 import Educational from './pages/Educational'
 import Theology from './pages/Theology'
+import BookProfile from './pages/BookProfile';
+
+import "./config/Firebase";
 
 function App() {
   return (
@@ -28,6 +33,7 @@ function App() {
             <Route exact path="/catalog/romance" element={<Romance />} />
             <Route exact path="/catalog/educational" element={<Educational />} />
             <Route exact path="/catalog/theology" element={<Theology />} />
+            <Route exact path="/bookProfile" element={<BookProfile />} />
           </Routes>
       </Router>
     </>
