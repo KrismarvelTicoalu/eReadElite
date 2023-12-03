@@ -5,7 +5,9 @@ const Discussion3 = () => {
     <div>
         <div>
   {/* header section start */}
+
   <Header discussion="active"/>
+  
   {/* header section end */}
   {/* arrival section start */}
   <header>
