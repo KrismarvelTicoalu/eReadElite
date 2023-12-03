@@ -226,8 +226,9 @@ button {
 }
 
 .logo {
-    width: 15%;
+    width: 60px;
     float: left;
+    margin-right: 50px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
