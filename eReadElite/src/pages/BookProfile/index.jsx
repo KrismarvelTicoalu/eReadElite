@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer"
+import StarRating from "../Star Rating";
 
 const BookProfile = () => {
     return (
@@ -18,6 +19,9 @@ const BookProfile = () => {
         <div>
         <button className="bottomBook">buy $</button>
         </div>
+
+        <StarRating/>
+  
 
         <Footer/>
       </>

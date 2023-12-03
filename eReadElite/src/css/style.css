@@ -886,7 +886,24 @@ input.email_text::placeholder {
   }
 .bottomBook{
     margin-left: 6%; 
-    margin-top: 2%;
+    margin-top: 1%;
     background-color: #3c0e0e;
     width: 12%;
 }
+
+.StarBottom {
+    margin-left: 0.5%;
+    margin-top: -1%;
+    user-select: none;
+  }
+  
+  .Star {
+    font-size: 250%;
+    color: yellow;
+    background-color: unset;
+    border: none;
+    padding: 1%;
+  
+    
+  }
+  
