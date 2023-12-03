@@ -20,6 +20,7 @@ import BookProfile from './pages/BookProfile';
 import "./config/Firebase";
 import Discussion3 from './pages/Discussion/index3';
 import Discussion2 from './pages/Discussion/index2';
+import Form from './pages/Form';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/publish" element={<Publish />} />
+            <Route exact path="/publish/form" element={<Form />} />
             <Route exact path="/catalog" element={<Catalog />} />
             <Route exact path="/discussion" element={<Discussion />} />
             <Route exact path="/discussion/discussion2" element={<Discussion2 />} />
