@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div>
         <Header />
-        <div className="login_form" style={{ margin: '200px', width: '1320px', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', color: 'black'}}>
+        <div className="login_form" style={{ margin: '100px', width: '1320px', textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', color: 'black'}}>
             <h2>Enter Your Book&apos;s Information</h2>
             <form>
               <label htmlFor="name">Your name:</label><br />
