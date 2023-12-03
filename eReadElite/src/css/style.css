@@ -226,8 +226,9 @@ button {
 }
 
 .logo {
-    width: 15%;
+    width: 60px;
     float: left;
+    margin-right: 50px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -758,16 +759,6 @@ input.email_text::placeholder {
     text-transform: uppercase;
 }
 
-.Cooming_soon_taital:after {
-    content: '';
-    position: absolute;
-    border: 2px solid #464646;
-    left: initial;
-    right: -20px;
-    width: 150px;
-    top: 50px;
-}
-
 .long_text_1 {
     width: 100%;
     float: left;
@@ -925,6 +916,7 @@ input.email_text::placeholder {
 
 .commandimage{
     margin-top: 3%;
+
     width: 50%;
 }
 
@@ -933,4 +925,312 @@ input.email_text::placeholder {
 
   }
 
- 
+ discussion-page-kia
+ /* discussion */
+ /* ########################################### */
+/*                 Global                      */
+/* ########################################### */
+*{
+    box-sizing: border-box;
+}
+
+.discussioncolor{
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #3c0e0e;
+    color:#FEFEFE;
+}
+
+a{
+    color:#df9911;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size:16px;
+    font-weight: bolder;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum {
+    margin-top: 20px;
+}
+
+.subforum-title {
+    background-color: #e4e4e4;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+    color: #df9911;
+}
+
+.subforum-row {
+    display: grid;
+    grid-template-columns: 60% 13% 20%;
+}
+
+.subforum-column {
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #111314;
+    color: whitesmoke;
+}
+
+.subforum-description * {
+    margin-block: 0;
+    color: whitesmoke;
+}
+
+.center { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-devider {
+    display: none;
+}
+
+/* Search Box styles */
+.search-box {
+    border: solid 1px  #3c0e0e;
+    margin-top: 20px;
+    padding: 20px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between; /* Changed to space-between */
+    align-items: center; /* Align items in the center */
+    box-shadow: 1px 2px 3px  #3c0e0e;
+    background-color: #1a1a1a; /* Changed background color */
+}
+
+.search-box select {
+    padding: 10px;
+    background-color: #1a1a1a; /* Changed background color */
+    color: #fff; /* Changed text color */
+}
+
+.search-box input {
+    padding: 10px;
+    flex: 1; /* Take remaining space */
+    background-color: #1a1a1a; /* Changed background color */
+    color: #fff; /* Changed text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Added border-radius */
+    margin-right: 10px; /* Added margin-right */
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Added border-radius */
+}
+
+.search-box button:hover {
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+/* ########################################### */
+/*            posts.html                       */
+/* ########################################### */
+
+/* posts table's head  */
+.table-head{
+    display: flex;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color:whitesmoke;
+    font-weight: bold;
+    color: #d89616;
+}
+
+.table-head .status{
+    flex: 5%;
+}
+
+.table-head .subjects{
+    flex: 70%;
+}
+
+.table-head .replies{
+    flex: 10%;
+}
+
+.table-head .last-reply{
+    flex: 15%;
+}
+
+/* posts table's body  */
+
+.table-row{
+    display: flex;
+}
+
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+    padding: 5px;
+    margin: 2px;
+    background-color: whitesmoke;
+}
+
+.table-row .status{
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-row .subjects{
+    flex: 70%;
+}
+
+.table-row .replies{
+    flex: 10%;
+}
+
+.table-row .last-reply{
+    flex: 15%;
+}
+
+/* navigation path*/
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.navigate a{
+    color: #fff;
+}
+
+.navigate a:hover{
+    color: #007bff;
+    font-weight: bolder;
+}
+
+/* Pagination*/
+
+.pagination{
+    padding: 20px;
+    font-size: 15px;
+    color: #007bff;
+}
+
+.pagination a{
+    color: #fff;
+    margin-inline: 5px;
+    padding: 5px 10px;
+    border: solid 0.5px #fff;
+}
+
+.pagination a:hover{
+    opacity: 0.5;
+}
+
+.note{
+    background-color:#111314;
+    padding: 20px;
+    display: block;
+}
+
+.note span{
+    font-size: 20px;
+    margin-block: 5px;
+}
+
+/* ########################################### */
+/*            detail.html                      */
+/* ########################################### */
+
+.head{
+    display: flex;
+    background-color: #2C2C2C;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.authors{
+    flex: 20%;
+}
+
+.content{
+    flex: 80%;
+}
+
+.body{
+    display: flex;
+    background-color: #131415;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.DetailDiscussion {
+    color: whitesmoke;
+}
+
+.body .authors .username{
+    font-size: 20px;
+}
+
+.body .authors img{
+    max-width: 50px;
+    max-height: 80px;
+}
+
+.body .content .comment button{
+    border:none;
+    padding:10px;
+    font-weight: bolder;
+    box-shadow: 4px 6px  #007bff;
+    cursor: pointer;
+    float: right;
+}
+
+/* comment section */
+.comment-area{
+    margin-bottom:50px;
+}
+
+.comment-area textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    margin-block: 10px;
+}
+
+.comment-area input{
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comment-area input:hover{
+    border: solid 1px #000000;
+}
+
+
+.textbuttonarea{
+    margin-left: 3%;
+    color:black;
+    background-color: white;
+    border-color: black;
+}
+
+.buttonrevew{
+    margin-left: 7%;
+    background-color:#E87400 ;
+}
+
