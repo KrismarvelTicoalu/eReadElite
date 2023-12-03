@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import Header from "../../components/Header"
+import { useEffect, useState } from "react";
 import Movie from "../../components/Movie"
 import { getDatabase, ref, onValue} from "firebase/database";
 
@@ -35,17 +35,17 @@ const Catalog = () => {
     <div className="container">
       <div className="movies_menu">
         <ul>
-          <li className="active"><a href="#">Overview</a></li>
-          <li><a href="/catalog/mystery">Mystery</a></li>
-          <li><a href="#">Sci-fi</a></li>
-          <li><a href="#">Romance</a></li>
-          <li><a href="celebs.html">Educational</a></li>
-          <li><a href="#">Theology</a></li>
+          <li className="active"><a href="/catalog">Overview</a></li>
+          <li><a href="/mystery">Mystery</a></li>
+          <li><a href="/sci-fi">Sci-fi</a></li>
+          <li><a href="/romance">Romance</a></li>
+          <li><a href="/educational">Educational</a></li>
+          <li><a href="/theology">Theology</a></li>
         </ul>
       </div>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Mystery</h2>
-        <div className="seemore_bt"><a href="#">See More</a></div>
+        <div className="seemore_bt"><a href="/mystery">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
             {getBook("mystery")}
@@ -58,7 +58,7 @@ const Catalog = () => {
       </div>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Science Fiction</h2>
-        <div className="seemore_bt"><a href="#">See More</a></div>
+        <div className="seemore_bt"><a href="/sci-fi">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
           {getBook("sci-fi")}
@@ -71,7 +71,7 @@ const Catalog = () => {
       </div>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Romance</h2>
-        <div className="seemore_bt"><a href="#">See More</a></div>
+        <div className="seemore_bt"><a href="/romance">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
           {getBook("romance")}
@@ -84,7 +84,7 @@ const Catalog = () => {
       </div>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Educational</h2>
-        <div className="seemore_bt"><a href="#">See More</a></div>
+        <div className="seemore_bt"><a href="/educational">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
           {getBook("educational")}
@@ -97,7 +97,7 @@ const Catalog = () => {
       </div>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Theology</h2>
-        <div className="seemore_bt"><a href="#">See More</a></div>
+        <div className="seemore_bt"><a href="/theology">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
           {getBook("theology")}
