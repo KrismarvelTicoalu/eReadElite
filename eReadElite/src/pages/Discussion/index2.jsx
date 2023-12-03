@@ -161,8 +161,10 @@ const Discussion2 = () => {
           <br />By <b><a href>MemoirLover</a></b>
         </div>
       </div>
+
       {/* Add more discussion posts as needed */}
       {/* Discussion posts end here */}
+      
     </div>
     {/* Pagination starts */}
     <div className="pagination">
