@@ -870,3 +870,23 @@ input.email_text::placeholder {
     color: #ffffff;
     margin-bottom: -25px;
 }
+
+.pProfilbuku {
+    position: relative;
+    display: inline-block;
+}
+
+.bukuMystery {
+    top: 0%;
+    left: 0%;
+    margin-top: 5%;
+    margin-right: 100%;
+    width: 20%;
+    margin-left: 2%;
+  }
+.bottomBook{
+    margin-left: 6%; 
+    margin-top: 2%;
+    background-color: #3c0e0e;
+    width: 12%;
+}
