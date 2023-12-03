@@ -31,7 +31,6 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
         <div className="PosisiBook">
           <div>
             <a href="#" className="Profilbuku">
-              
               <img src="images/mysteryBook.jpg" className="bukuMystery" alt="Mystery Book" />
             </a>
           </div>
@@ -45,7 +44,11 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
           </div>
 
           <StarRating/>
-
+         
+          <div className="RevewBook">
+          <textarea className="textbuttonarea" name="command" id="123" cols="30" rows="10" ></textarea>
+          </div>
+          <button className="buttonrevew">write review</button>
           <div className="FuterProfilBook">
           <Footer/>
           </div>
