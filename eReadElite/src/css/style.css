@@ -925,7 +925,7 @@ input.email_text::placeholder {
 
 .commandimage{
     margin-top: 3%;
-    
+
     width: 50%;
 }
 
@@ -934,4 +934,13 @@ input.email_text::placeholder {
 
   }
 
- 
+.textbuttonarea{
+    margin-left: 3%;
+    color:black;
+    background-color: white;
+    border-color: black;
+}
+
+.buttonrevew{
+    margin-left: 7%;
+}
