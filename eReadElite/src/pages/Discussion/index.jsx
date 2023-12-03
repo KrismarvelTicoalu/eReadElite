@@ -41,7 +41,7 @@ const Discussion = () => {
           <br />on <small>1 Jan 2023</small>
         </div>
       </div>
-      {/* Add more mystery book entries as needed */}
+      {/* Add more mystery book entries as needed or wanted */}
     </div>
     <div className="subforum">
       <div className="subforum-title">
