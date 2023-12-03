@@ -899,11 +899,26 @@ input.email_text::placeholder {
   
   .Star {
     font-size: 250%;
-    color: yellow;
+    color: #E87400;
     background-color: unset;
     border: none;
     padding: 1%;
   
     
   }
-  
+  .PosisiBook {
+   
+    position: relative;
+
+  }
+  .Teks{
+    margin-left: 25%;
+    margin-top: 2%;
+    position: absolute;
+  }
+
+  .ratingImage{
+    margin-bottom: 0.0001%;
+    width: 50%;
+    
+  }
