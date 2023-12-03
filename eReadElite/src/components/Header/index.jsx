@@ -4,7 +4,7 @@ const Header = (props) => {
     <div>
         <div className="header_section">
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="logo" href="index.html"><img src="../images/eReadElite.jpg" /></a>
+      <a className="logo" href="/"><img src="../images/eReadElite.jpg" /></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>
