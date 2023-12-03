@@ -2,6 +2,7 @@ import Header from "../../components/Header"
 import { useEffect, useState } from "react";
 import Movie from "../../components/Movie"
 import { getDatabase, ref, onValue} from "firebase/database";
+import Fade from 'react-reveal/Fade'
 
 
 const Educational = () => {
@@ -34,6 +35,7 @@ const Educational = () => {
   {/* movies section start */}
   <div className="movies_section layout_padding">
     <div className="container">
+      <Fade bottom>
       <div className="movies_menu">
         <ul>
           <li><a href="/catalog">Overview</a></li>
@@ -44,6 +46,9 @@ const Educational = () => {
           <li><a href="/theology">Theology</a></li>
         </ul>
       </div>
+
+      </Fade>
+      <Fade bottom delay={1000}>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Educational</h2>
         <div className="movies_main">
@@ -56,10 +61,13 @@ const Educational = () => {
           </div>
         </div>
       </div>
+
+      </Fade>
     </div>
   </div>
   {/* movies section end */}
   {/* footer  section start */}
+  <Fade top>
   <div className="footer_section layout_padding">
     <div className="container">
       <div className="footer_menu">
@@ -89,6 +97,8 @@ const Educational = () => {
       <div className="copyright_text">Copyright 2019 All Right Reserved By <a href="https://html.design">Free html Templates</a></div>
     </div>
   </div>
+
+  </Fade>
 </div>
 
     </div>
