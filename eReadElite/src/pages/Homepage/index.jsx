@@ -3,6 +3,7 @@ import Header from "../../components/Header"
 import { useEffect, useState } from "react";
 import Movie from "../../components/Movie"
 import { getDatabase, ref, onValue} from "firebase/database";
+import Fade from 'react-reveal/Fade'
 
 const HomePage = () => {
   const [movie, setMovie] = useState([]);
@@ -32,8 +33,15 @@ const HomePage = () => {
   {/* movies section start */}
   <div className="movies_section layout_padding">
     <div className="container">
-      <img src="images/eReadElite.jpg" style={{display: 'block', margin: '0 auto', width: '300px', marginBottom: '100px'}} />
+      <Fade bottom>
+      <img src="images/eReadElite.jpg" style={{display: 'block', margin: '0 auto', width: '200px', marginBottom: '100px'}} />
+        
+      </Fade>
+      <Fade bottom delay={500}>
       <h2 className="subtitle">Recommendations</h2>
+
+      </Fade>
+      <Fade bottom delay={1000}> 
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Mystery</h2>
         <div className="seemore_bt"><a href="/mystery">See More</a></div>
@@ -99,6 +107,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      </Fade>
       <div className="seebt_1"><a href="#">See More</a></div>
     </div>
   </div>

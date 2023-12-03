@@ -2,6 +2,7 @@ import Header from "../../components/Header"
 import { useEffect, useState } from "react";
 import Movie from "../../components/Movie"
 import { getDatabase, ref, onValue} from "firebase/database";
+import Fade from 'react-reveal/Fade'
 
 const Catalog = () => {
   const [movie, setMovie] = useState([]);
@@ -33,29 +34,34 @@ const Catalog = () => {
   {/* movies section start */}
   <div className="movies_section layout_padding">
     <div className="container">
-      <div className="movies_menu">
-        <ul>
-          <li className="active"><a href="/catalog">Overview</a></li>
-          <li><a href="/mystery">Mystery</a></li>
-          <li><a href="/sci-fi">Sci-fi</a></li>
-          <li><a href="/romance">Romance</a></li>
-          <li><a href="/educational">Educational</a></li>
-          <li><a href="/theology">Theology</a></li>
-        </ul>
-      </div>
-      <div className="movies_section_2 layout_padding">
-        <h2 className="letest_text">Mystery</h2>
-        <div className="seemore_bt"><a href="/mystery">See More</a></div>
-        <div className="movies_main">
-          <div className="iamge_movies_main">
-            {getBook("mystery")}
-            {getBook("mystery")}
-            {getBook("mystery")}
-            {getBook("mystery")}
-            {getBook("mystery")}
+      <Fade bottom>
+        <div className="movies_menu">
+          <ul>
+            <li className="active"><a href="/catalog">Overview</a></li>
+            <li><a href="/mystery">Mystery</a></li>
+            <li><a href="/sci-fi">Sci-fi</a></li>
+            <li><a href="/romance">Romance</a></li>
+            <li><a href="/educational">Educational</a></li>
+            <li><a href="/theology">Theology</a></li>
+          </ul>
+        </div>
+      </Fade>
+      <Fade bottom delay={1000}>
+        <div className="movies_section_2 layout_padding">
+          <h2 className="letest_text">Mystery</h2>
+          <div className="seemore_bt"><a href="/mystery">See More</a></div>
+          <div className="movies_main">
+            <div className="iamge_movies_main">
+              {getBook("mystery")}
+              {getBook("mystery")}
+              {getBook("mystery")}
+              {getBook("mystery")}
+              {getBook("mystery")}
+            </div>
           </div>
         </div>
-      </div>
+      </Fade>
+      <Fade bottom delay={1000}>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Science Fiction</h2>
         <div className="seemore_bt"><a href="/sci-fi">See More</a></div>
@@ -69,6 +75,8 @@ const Catalog = () => {
           </div>
         </div>
       </div>
+      </Fade>
+      <Fade bottom delay={1000}>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Romance</h2>
         <div className="seemore_bt"><a href="/romance">See More</a></div>
@@ -82,6 +90,8 @@ const Catalog = () => {
           </div>
         </div>
       </div>
+      </Fade>
+      <Fade bottom delay={1000}>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Educational</h2>
         <div className="seemore_bt"><a href="/educational">See More</a></div>
@@ -95,6 +105,8 @@ const Catalog = () => {
           </div>
         </div>
       </div>
+      </Fade>
+      <Fade bottom delay={1000}>
       <div className="movies_section_2 layout_padding">
         <h2 className="letest_text">Theology</h2>
         <div className="seemore_bt"><a href="/theology">See More</a></div>
@@ -108,6 +120,8 @@ const Catalog = () => {
           </div>
         </div>
       </div>
+      </Fade>
+
       <div className="seebt_1"><a href="#">See More</a></div>
     </div>
   </div>
