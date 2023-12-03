@@ -8,13 +8,21 @@ const Catalog = () => {
 
   useEffect(() => {
     const db = getDatabase();
-    const movieRef = ref(db, "movies/");
+    const movieRef = ref(db, "books/");
     onValue(movieRef, (snapshot) => {
       const data = snapshot.val();
       console.log(data);
       setMovie(Object.keys(data).map(key => data[key]));
     });
   }, [])
+
+  const getBook = (genre) => {
+    return movie.map((item) => {
+      if (item.genre === genre) {
+        return (<Movie key={item.id} thumbnail={item.thumbnail} title={item.title} author={item.author} />);
+      }
+    })
+  }
 
   return (
     <div>
@@ -40,11 +48,11 @@ const Catalog = () => {
         <div className="seemore_bt"><a href="#">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
-            {movie.map((item) => {
-              if (item.genre === "mystery") {
-                return (<Movie key={item.id} thumbnail={item.thumbnail} title={item.title} author={item.author} />);
-              }
-            })}
+            {getBook("mystery")}
+            {getBook("mystery")}
+            {getBook("mystery")}
+            {getBook("mystery")}
+            {getBook("mystery")}
           </div>
         </div>
       </div>
@@ -53,11 +61,11 @@ const Catalog = () => {
         <div className="seemore_bt"><a href="#">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
-          {movie.map((item) => {
-              if (item.genre === "sci-fi") {
-                return (<Movie key={item.id} thumbnail={item.thumbnail} title={item.title} author={item.author} />);
-              }
-            })}
+          {getBook("sci-fi")}
+          {getBook("sci-fi")}
+          {getBook("sci-fi")}
+          {getBook("sci-fi")}
+          {getBook("sci-fi")}
           </div>
         </div>
       </div>
@@ -66,101 +74,11 @@ const Catalog = () => {
         <div className="seemore_bt"><a href="#">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-13.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">CADE Prlor</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-14.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Bradon</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-15.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Anton Levin</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-16.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Sacha Styles</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-7.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Katledrazdu</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
+          {getBook("romance")}
+          {getBook("romance")}
+          {getBook("romance")}
+          {getBook("romance")}
+          {getBook("romance")}
           </div>
         </div>
       </div>
@@ -169,101 +87,11 @@ const Catalog = () => {
         <div className="seemore_bt"><a href="#">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-13.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">CADE Prlor</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-14.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Bradon</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-15.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Anton Levin</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-16.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Sacha Styles</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-7.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Katledrazdu</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
+          {getBook("educational")}
+          {getBook("educational")}
+          {getBook("educational")}
+          {getBook("educational")}
+          {getBook("educational")}
           </div>
         </div>
       </div>
@@ -272,101 +100,11 @@ const Catalog = () => {
         <div className="seemore_bt"><a href="#">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-13.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">CADE Prlor</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-14.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Bradon</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-15.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Anton Levin</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-16.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Sacha Styles</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="iamge_movies">
-              <div className="image_3">
-                <img src="images/img-7.png" className="image" style={{width: '100%'}} />
-                <div className="middle">
-                  <div className="playnow_bt">Play Now</div>
-                </div>
-              </div>
-              <h1 className="code_text">Katledrazdu</h1>
-              <p className="there_text">There are many variations </p>
-              <div className="star_icon">
-                <ul>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                  <li><a href="#"><img src="images/star-icon.png" /></a></li>
-                </ul>
-              </div>
-            </div>
+          {getBook("theology")}
+          {getBook("theology")}
+          {getBook("theology")}
+          {getBook("theology")}
+          {getBook("theology")}
           </div>
         </div>
       </div>
