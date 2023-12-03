@@ -9,7 +9,7 @@ const Movie = (props) => {
             </div>
           </div>
           <h1 className="code_text">{props.title}</h1>
-          <p className="there_text">{props.desc}</p>
+          <p className="there_text">{props.author}</p>
           <div className="star_icon">
             <ul>
               <li><a href="#"><img src="images/star-icon.png" /></a></li>

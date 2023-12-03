@@ -18,6 +18,8 @@ import Theology from './pages/Theology'
 import BookProfile from './pages/BookProfile';
 
 import "./config/Firebase";
+import Discussion3 from './pages/Discussion/index3';
+import Discussion2 from './pages/Discussion/index2';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
             <Route exact path="/publish" element={<Publish />} />
             <Route exact path="/catalog" element={<Catalog />} />
             <Route exact path="/discussion" element={<Discussion />} />
+            <Route exact path="/discussion/discussion2" element={<Discussion2 />} />
+            <Route exact path="/discussion/discussion3" element={<Discussion3 />} />
             <Route exact path="/catalog/mystery" element={<Mystery />} />
             <Route exact path="/catalog/sci-fi" element={<SciFi/>} />
             <Route exact path="/catalog/romance" element={<Romance />} />
