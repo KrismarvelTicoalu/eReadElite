@@ -34,11 +34,11 @@ function App() {
             <Route exact path="/discussion" element={<Discussion />} />
             <Route exact path="/discussion/discussion2" element={<Discussion2 />} />
             <Route exact path="/discussion/discussion3" element={<Discussion3 />} />
-            <Route exact path="/catalog/mystery" element={<Mystery />} />
-            <Route exact path="/catalog/sci-fi" element={<SciFi/>} />
-            <Route exact path="/catalog/romance" element={<Romance />} />
-            <Route exact path="/catalog/educational" element={<Educational />} />
-            <Route exact path="/catalog/theology" element={<Theology />} />
+            <Route exact path="/mystery" element={<Mystery />} />
+            <Route exact path="/sci-fi" element={<SciFi/>} />
+            <Route exact path="/romance" element={<Romance />} />
+            <Route exact path="/educational" element={<Educational />} />
+            <Route exact path="/theology" element={<Theology />} />
             <Route exact path="/bookProfile" element={<BookProfile />} />
           </Routes>
       </Router>
