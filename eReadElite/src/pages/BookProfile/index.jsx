@@ -13,8 +13,6 @@ const BookProfile = () => {
           <a href="#" className="Jumlahrating">
             <img src="images/rating.png" className="ratingImage"></img>
           </a>
-          <h1></h1>
-
         </div>
         <div className="PosisiBook">
           <div>
