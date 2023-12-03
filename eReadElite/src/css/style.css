@@ -870,3 +870,67 @@ input.email_text::placeholder {
     color: #ffffff;
     margin-bottom: -25px;
 }
+
+.pProfilbuku {
+    position: relative;
+    display: inline-block;
+}
+
+.bukuMystery {
+    top: 0%;
+    left: 0%;
+    margin-top: 5%;
+    margin-right: 100%;
+    width: 20%;
+    margin-left: 2%;
+  }
+.bottomBook{
+    margin-left: 6%; 
+    margin-top: 1%;
+    background-color: #3c0e0e;
+    width: 12%;
+}
+
+.StarBottom {
+    margin-left: 0.5%;
+    margin-top: -1%;
+    user-select: none;
+  }
+  
+  .Star {
+    font-size: 250%;
+    color: #E87400;
+    background-color: unset;
+    border: none;
+    padding: 1%;
+  
+    
+  }
+  .PosisiBook {
+   
+    position: relative;
+
+  }
+  .Teks{
+    margin-left: 25%;
+    margin-top: 2%;
+    position: absolute;
+  }
+
+  .ratingImage{
+    margin-bottom: 0.0001%;
+    width: 50%;
+
+  }
+
+.commandimage{
+    margin-top: 3%;
+    width: 50%;
+}
+
+  .FuterProfilBook{
+    margin-top: 30%;
+
+  }
+
+ 

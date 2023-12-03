@@ -12,7 +12,7 @@ const Catalog = () => {
     onValue(movieRef, (snapshot) => {
       const data = snapshot.val();
       console.log(data);
-      setMovie(data);
+      setMovie(Object.keys(data).map(key => data[key]));
     });
   }, [])
 
@@ -40,11 +40,14 @@ const Catalog = () => {
         <div className="seemore_bt"><a href="#">See More</a></div>
         <div className="movies_main">
           <div className="iamge_movies_main">
-            <Movie thumbnail="img-3.png" title="Test" desc="lorem ipsum dolor" />
+            {movie.map((item) => {
+              return (<Movie key={item.id}thumbnail={item.thumbnail} title={item.title} desc={item.desc} />);
+            })}
+            {/* <Movie thumbnail="img-3.png" title="Test" desc="lorem ipsum dolor" />
             <Movie thumbnail="img-4.png" title="Bradon" desc="There are many variations " />
             <Movie thumbnail="img-5.png" title="Anton Levin" desc="There are many variations " />
             <Movie thumbnail="img-6.png" title="Sacha Styles" desc="There are many variations " />
-            <Movie thumbnail="img-7.png" title="Katledrazdu" desc="There are many variations " />
+            <Movie thumbnail="img-7.png" title="Katledrazdu" desc="There are many variations " /> */}
           </div>
         </div>
       </div>
