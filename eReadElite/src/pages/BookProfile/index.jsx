@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer"
-import StarRating from "../Star Rating";
+import LeftBookProfile from "../LeftBookProfile";
 
 const BookProfile = () => {
     return (
@@ -34,21 +34,7 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
               <img src="images/mysteryBook.jpg" className="bukuMystery" alt="Mystery Book" />
             </a>
           </div>
-
-          <div>
-            <button className="bottomBook">Want to Read?</button>
-          </div>
-
-          <div>
-            <button className="bottomBook">buy $</button>
-          </div>
-
-          <StarRating/>
-         
-          <div className="RevewBook">
-          <textarea className="textbuttonarea" name="command" id="123" cols="30" rows="10" ></textarea>
-          </div>
-          <button className="buttonrevew">write review</button>
+          <LeftBookProfile/>
           <div className="FuterProfilBook">
           <Footer/>
           </div>
