@@ -30,7 +30,7 @@ const Discussion = () => {
       </div>
       <div className="subforum-row">
         <div className="subforum-description subforum-column">
-          <h4><a href="./Discussion/Discussion-2">The Da Vinci Code</a></h4>
+          <h4><a href="./Discussion/Discussion-2/index.jsx">The Da Vinci Code</a></h4>
           <p>Description: A gripping mystery that combines art, history, and symbolism.</p>
         </div>
         <div className="subforum-stats subforum-column center">
