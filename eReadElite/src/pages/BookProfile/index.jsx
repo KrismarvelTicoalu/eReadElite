@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer"
-import StarRating from "../Star Rating";
+import LeftBookProfile from "../LeftBookProfile";
 
 const BookProfile = () => {
     return (
@@ -17,7 +17,7 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
 
 “Sangat menakutkan dan mencekam.” - Stephen King</p>
 
-          <h4> genres : Horror , Fiction , Mystery , Thriller , Crime , Fantasy </h4>
+          <h4> genres : Horror , Fiction , Mystery , Thriller , Crime , Fantasy. </h4>
           <h6>Publish : <p>First published July 31, 2014</p></h6>
           <a href="#" className="Jumlahrating">
             <div>
@@ -34,17 +34,7 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
               <img src="images/mysteryBook.jpg" className="bukuMystery" alt="Mystery Book" />
             </a>
           </div>
-
-          <div>
-            <button className="bottomBook">Want to Read?</button>
-          </div>
-
-          <div>
-            <button className="bottomBook">buy $</button>
-          </div>
-
-          <StarRating/>
-
+          <LeftBookProfile/>
           <div className="FuterProfilBook">
           <Footer/>
           </div>

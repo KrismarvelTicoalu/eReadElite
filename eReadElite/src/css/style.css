@@ -925,6 +925,7 @@ input.email_text::placeholder {
 
 .commandimage{
     margin-top: 3%;
+
     width: 50%;
 }
 
@@ -933,6 +934,7 @@ input.email_text::placeholder {
 
   }
 
+ discussion-page-kia
  /* discussion */
  /* ########################################### */
 /*                 Global                      */
@@ -1228,3 +1230,16 @@ h1{
     border: solid 1px #000000;
 }
 
+
+.textbuttonarea{
+    margin-left: 3%;
+    color:black;
+    background-color: white;
+    border-color: black;
+}
+
+.buttonrevew{
+    margin-left: 7%;
+    background-color:#E87400 ;
+}
+ development
