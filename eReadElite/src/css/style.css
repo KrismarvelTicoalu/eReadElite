@@ -933,4 +933,117 @@ input.email_text::placeholder {
 
   }
 
- 
+ /* discussion */
+ /* ########################################### */
+/*                 Global                      */
+/* ########################################### */
+*{
+    box-sizing: border-box;
+}
+
+.discussioncolor{
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #3c0e0e;
+    color:#FEFEFE;
+}
+
+a{
+    color:#df9911;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size:16px;
+    font-weight: bolder;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum {
+    margin-top: 20px;
+}
+
+.subforum-title {
+    background-color: #e4e4e4;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 4px;
+    color: #df9911;
+}
+
+.subforum-row {
+    display: grid;
+    grid-template-columns: 60% 13% 20%;
+}
+
+.subforum-column {
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #111314;
+    color: whitesmoke;
+}
+
+.subforum-description * {
+    margin-block: 0;
+    color: whitesmoke;
+}
+
+.center { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-devider {
+    display: none;
+}
+
+/* Search Box styles */
+.search-box {
+    border: solid 1px  #3c0e0e;
+    margin-top: 20px;
+    padding: 20px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between; /* Changed to space-between */
+    align-items: center; /* Align items in the center */
+    box-shadow: 1px 2px 3px  #3c0e0e;
+    background-color: #1a1a1a; /* Changed background color */
+}
+
+.search-box select {
+    padding: 10px;
+    background-color: #1a1a1a; /* Changed background color */
+    color: #fff; /* Changed text color */
+}
+
+.search-box input {
+    padding: 10px;
+    flex: 1; /* Take remaining space */
+    background-color: #1a1a1a; /* Changed background color */
+    color: #fff; /* Changed text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Added border-radius */
+    margin-right: 10px; /* Added margin-right */
+}
+
+.search-box button {
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Added border-radius */
+}
+
+.search-box button:hover {
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 1px 2px 3px #fff;
+}
+
+
