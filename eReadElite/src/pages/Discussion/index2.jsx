@@ -25,7 +25,7 @@ const Discussion2 = () => {
   <div className="container">
     {/* Navigation */}
     <div className="navigate">
-      <span><a href>Book Discussions - Forum</a> &gt;&gt; <a href /></span>
+      <span><a href="/Discussion">Book Discussions - Forum</a> &gt;&gt; <a href="#">Mystery</a></span>
     </div>
     {/* Display book discussion posts */}
     <div className="posts-table">
@@ -36,133 +36,82 @@ const Discussion2 = () => {
       </div>
       {/* Discussion posts start here */}
       <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Favorite Science Fiction Novels</a>
-          <br />
-          <span>Started by <b><a href>BookLover123</a></b>.</span>
-        </div>
-        <div className="replies">
-          5 replies <br /> 210 views
-        </div>
-        <div className="last-reply">
-          Nov 15, 2023
-          <br />By <b><a href>ReadingEnthusiast</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Must-read Classics: Recommendations</a>
-          <br />
-          <span>Started by <b><a href>ClassicReader</a></b>.</span>
-        </div>
-        <div className="replies">
-          8 replies <br /> 315 views
-        </div>
-        <div className="last-reply">
-          Nov 20, 2023
-          <br />By <b><a href>LitExplorer</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Fantasy Book Series Discussion</a>
-          <br />
-          <span>Started by <b><a href>FantasyFanatic</a></b>.</span>
-        </div>
-        <div className="replies">
-          12 replies <br /> 420 views
-        </div>
-        <div className="last-reply">
-          Nov 25, 2023
-          <br />By <b><a href>ImaginaryWorlds</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Book-to-Movie Adaptations: Hits and Misses</a>
-          <br />
-          <span>Started by <b><a href>FilmBookBuff</a></b>.</span>
-        </div>
-        <div className="replies">
-          6 replies <br /> 180 views
-        </div>
-        <div className="last-reply">
-          Nov 28, 2023
-          <br />By <b><a href>CineLover</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Hidden Gems: Lesser-Known Books Worth Reading</a>
-          <br />
-          <span>Started by <b><a href>BookExplorer</a></b>.</span>
-        </div>
-        <div className="replies">
-          15 replies <br /> 525 views
-        </div>
-        <div className="last-reply">
-          Dec 5, 2023
-          <br />By <b><a href>CuriousReader</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Mystery and Thriller Recommendations</a>
-          <br />
-          <span>Started by <b><a href>ThrillSeeker</a></b>.</span>
-        </div>
-        <div className="replies">
-          10 replies <br /> 300 views
-        </div>
-        <div className="last-reply">
-          Dec 10, 2023
-          <br />By <b><a href>DetectiveFan</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Book Club Selections for the Month</a>
-          <br />
-          <span>Started by <b><a href>BookClubLeader</a></b>.</span>
-        </div>
-        <div className="replies">
-          7 replies <br /> 240 views
-        </div>
-        <div className="last-reply">
-          Dec 15, 2023
-          <br />By <b><a href>LiteraryEnclave</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Science and Technology in Fiction: Recommendations</a>
-          <br />
-          <span>Started by <b><a href>TechReader</a></b>.</span>
-        </div>
-        <div className="replies">
-          9 replies <br /> 400 views
-        </div>
-        <div className="last-reply">
-          Dec 20, 2023
-          <br />By <b><a href>SciFiEnthusiast</a></b>
-        </div>
-      </div>
-      <div className="table-row">
-        <div className="subjects">
-          <a href="/discussion/discussion3">Autobiographies and Memoirs: Personal Favorites</a>
-          <br />
-          <span>Started by <b><a href>LifeStoryReader</a></b>.</span>
-        </div>
-        <div className="replies">
-          11 replies <br /> 350 views
-        </div>
-        <div className="last-reply">
-          Dec 25, 2023
-          <br />By <b><a href>MemoirLover</a></b>
-        </div>
-      </div>
-      {/* Add more discussion posts as needed */}
-      {/* Discussion posts end here */}
+                <div className="subjects">
+                  <a href="/discussion/discussion3">
+                    Favorite Scenes and Quotes
+                  </a>
+                  <br />
+                  <span>
+                    Started by <b><a href>DaVinciFan123</a></b>.
+                  </span>
+                </div>
+                <div className="replies">
+                  5 replies <br /> 210 views
+                </div>
+                <div className="last-reply">
+                  Nov 15, 2023
+                  <br />By <b><a href>SymbolismSeeker</a></b>
+                </div>
+              </div>
+
+              <div className="table-row">
+                <div className="subjects">
+                  <a href="/discussion/discussion3">
+                    The Da Vinci Code: Fact or Fiction?
+                  </a>
+                  <br />
+                  <span>
+                    Started by <b><a href>HistoryBuff</a></b>.
+                  </span>
+                </div>
+                <div className="replies">
+                  8 replies <br /> 315 views
+                </div>
+                <div className="last-reply">
+                  Nov 20, 2023
+                  <br />By <b><a href>ConspiracyTheorist</a></b>
+                </div>
+              </div>
+
+              <div className="table-row">
+                <div className="subjects">
+                  <a href="/discussion/discussion3">
+                    Favorite Characters: Robert Langdon vs Teabing 
+                  </a>
+                  <br />
+                  <span>
+                    Started by <b><a href>CharacterAnalyzer</a></b>.
+                  </span>
+                </div>
+                <div className="replies">
+                  12 replies <br /> 420 views
+                </div>
+                <div className="last-reply">
+                  Nov 25, 2023
+                  <br />By <b><a href>LangdonDefender</a></b>
+                </div>
+              </div>
+
+              <div className="table-row">
+                <div className="subjects">
+                  <a href="/discussion/discussion3">
+                    Book vs Movie: Which was better?
+                  </a>
+                  <br />
+                  <span>
+                    Started by <b><a href>PageToScreen</a></b>.
+                  </span>
+                </div>
+                <div className="replies">
+                  6 replies <br /> 180 views
+                </div>
+                <div className="last-reply">
+                  Nov 28, 2023
+                  <br />By <b><a href>BookPurist</a></b>
+                </div>
+              </div>
+              {/* Add more discussion posts as needed */}
+              {/* Discussion posts end here */}
     </div>
     {/* Pagination starts */}
     <div className="pagination">
