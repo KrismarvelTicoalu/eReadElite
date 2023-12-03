@@ -31,7 +31,7 @@ const HomePage = () => {
   <Header home="active"/>
   {/* header section end */}
   {/* movies section start */}
-  <div className="movies_section layout_padding">
+  <div className="movies_section layout_padding" style={{marginRight: '250px'}}>
     <div className="container">
       <Fade bottom>
       <img src="images/eReadElite.jpg" style={{display: 'block', margin: '0 auto', width: '200px', marginBottom: '100px'}} />
@@ -114,20 +114,7 @@ const HomePage = () => {
   </div>
   {/* movies section end */}
 
-  {/* cooming  section start */}
-  <div className="cooming_section layout_padding">
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6">
-          <div className="image_17">
-            <div className="image_17"><img src="images/img-17.png" /></div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  {/* cooming  section end */}
+  
   {/* footer  section start */}
   <Footer />
   {/* footer  section end */}
