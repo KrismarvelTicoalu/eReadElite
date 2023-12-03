@@ -17,7 +17,7 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
 
 “Sangat menakutkan dan mencekam.” - Stephen King</p>
 
-          <h4> genres : Horror , Fiction , Mystery , Thriller , Crime , Fantasy </h4>
+          <h4> genres : Horror , Fiction , Mystery , Thriller , Crime , Fantasy. </h4>
           <h6>Publish : <p>First published July 31, 2014</p></h6>
           <a href="#" className="Jumlahrating">
             <div>
@@ -31,6 +31,7 @@ Jika kau Layla, putri remaja Detektif Versado, kau “main-main” dengan orang 
         <div className="PosisiBook">
           <div>
             <a href="#" className="Profilbuku">
+              
               <img src="images/mysteryBook.jpg" className="bukuMystery" alt="Mystery Book" />
             </a>
           </div>
