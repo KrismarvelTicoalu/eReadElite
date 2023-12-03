@@ -226,8 +226,9 @@ button {
 }
 
 .logo {
-    width: 15%;
+    width: 60px;
     float: left;
+    margin-right: 50px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -756,16 +757,6 @@ input.email_text::placeholder {
     color: #141414;
     padding-top: 15px;
     text-transform: uppercase;
-}
-
-.Cooming_soon_taital:after {
-    content: '';
-    position: absolute;
-    border: 2px solid #464646;
-    left: initial;
-    right: -20px;
-    width: 150px;
-    top: 50px;
 }
 
 .long_text_1 {
