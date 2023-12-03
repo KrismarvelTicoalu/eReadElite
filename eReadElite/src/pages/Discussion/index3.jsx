@@ -1,6 +1,6 @@
 import Header from "../../components/Header"
 
-const Discussion = () => {
+const Discussion3 = () => {
   return (
     <div>
         <div>
@@ -162,4 +162,4 @@ const Discussion = () => {
   )
 }
 
-export default Discussion
+export default Discussion3

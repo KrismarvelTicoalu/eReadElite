@@ -37,7 +37,7 @@ const Discussion2 = () => {
       {/* Discussion posts start here */}
       <div className="table-row">
         <div className="subjects">
-          <a href>Favorite Science Fiction Novels</a>
+          <a href="/discussion/discussion3">Favorite Science Fiction Novels</a>
           <br />
           <span>Started by <b><a href>BookLover123</a></b>.</span>
         </div>
@@ -51,7 +51,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Must-read Classics: Recommendations</a>
+          <a href="/discussion/discussion3">Must-read Classics: Recommendations</a>
           <br />
           <span>Started by <b><a href>ClassicReader</a></b>.</span>
         </div>
@@ -65,7 +65,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Fantasy Book Series Discussion</a>
+          <a href="/discussion/discussion3">Fantasy Book Series Discussion</a>
           <br />
           <span>Started by <b><a href>FantasyFanatic</a></b>.</span>
         </div>
@@ -79,7 +79,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Book-to-Movie Adaptations: Hits and Misses</a>
+          <a href="/discussion/discussion3">Book-to-Movie Adaptations: Hits and Misses</a>
           <br />
           <span>Started by <b><a href>FilmBookBuff</a></b>.</span>
         </div>
@@ -93,7 +93,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Hidden Gems: Lesser-Known Books Worth Reading</a>
+          <a href="/discussion/discussion3">Hidden Gems: Lesser-Known Books Worth Reading</a>
           <br />
           <span>Started by <b><a href>BookExplorer</a></b>.</span>
         </div>
@@ -107,7 +107,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Mystery and Thriller Recommendations</a>
+          <a href="/discussion/discussion3">Mystery and Thriller Recommendations</a>
           <br />
           <span>Started by <b><a href>ThrillSeeker</a></b>.</span>
         </div>
@@ -121,7 +121,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Book Club Selections for the Month</a>
+          <a href="/discussion/discussion3">Book Club Selections for the Month</a>
           <br />
           <span>Started by <b><a href>BookClubLeader</a></b>.</span>
         </div>
@@ -135,7 +135,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Science and Technology in Fiction: Recommendations</a>
+          <a href="/discussion/discussion3">Science and Technology in Fiction: Recommendations</a>
           <br />
           <span>Started by <b><a href>TechReader</a></b>.</span>
         </div>
@@ -149,7 +149,7 @@ const Discussion2 = () => {
       </div>
       <div className="table-row">
         <div className="subjects">
-          <a href>Autobiographies and Memoirs: Personal Favorites</a>
+          <a href="/discussion/discussion3">Autobiographies and Memoirs: Personal Favorites</a>
           <br />
           <span>Started by <b><a href>LifeStoryReader</a></b>.</span>
         </div>

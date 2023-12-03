@@ -30,7 +30,7 @@ const Discussion = () => {
       </div>
       <div className="subforum-row">
         <div className="subforum-description subforum-column">
-          <h4><a href="./Discussion/Discussion-2/index.jsx">The Da Vinci Code</a></h4>
+          <h4><a href="./discussion/discussion2">The Da Vinci Code</a></h4>
           <p>Description: A gripping mystery that combines art, history, and symbolism.</p>
         </div>
         <div className="subforum-stats subforum-column center">
@@ -49,7 +49,7 @@ const Discussion = () => {
       </div>
       <div className="subforum-row">
         <div className="subforum-description subforum-column">
-          <h4><a href="#">Dune</a></h4>
+          <h4><a href="./discussion/discussion2">Dune</a></h4>
           <p>Description: Explore the epic world of Arrakis and the spice melange in this classic sci-fi novel.</p>
         </div>
         <div className="subforum-stats subforum-column center">
@@ -68,7 +68,7 @@ const Discussion = () => {
       </div>
       <div className="subforum-row">
         <div className="subforum-description subforum-column">
-          <h4><a href="#">Pride and Prejudice</a></h4>
+          <h4><a href="./discussion/discussion2">Pride and Prejudice</a></h4>
           <p>Description: A timeless romance novel that explores themes of love and social expectations.</p>
         </div>
         <div className="subforum-stats subforum-column center">
@@ -87,7 +87,7 @@ const Discussion = () => {
       </div>
       <div className="subforum-row">
         <div className="subforum-description subforum-column">
-          <h4><a href="#">Sapiens: A Brief History of Humankind</a></h4>
+          <h4><a href="./discussion/discussion2">Sapiens: A Brief History of Humankind</a></h4>
           <p>Description: An educational journey through the history of human evolution and societies.</p>
         </div>
         <div className="subforum-stats subforum-column center">
@@ -106,7 +106,7 @@ const Discussion = () => {
       </div>
       <div className="subforum-row">
         <div className="subforum-description subforum-column">
-          <h4><a href="#">Mere Christianity</a></h4>
+          <h4><a href="./discussion/discussion2">Mere Christianity</a></h4>
           <p>Description: C.S. Lewis explores fundamental Christian theology in this thought-provoking work.</p>
         </div>
         <div className="subforum-stats subforum-column center">
