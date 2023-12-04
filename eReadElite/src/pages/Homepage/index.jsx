@@ -120,7 +120,7 @@ const HomePage = () => {
       <div className="row">
         <div className="col-md-6">
           <div className="image_17">
-            <div className="image_17"><img src="images/img-17.png" /></div>
+            <div className="image_17"><img src="images/eReadElite.jpg" style={{display: 'block', marginLeft: '450px'}}/></div>
           </div>
         </div>
         
